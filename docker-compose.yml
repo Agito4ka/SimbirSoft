@@ -1,0 +1,13 @@
+version: '3.11'
+
+
+services:
+  python-app:
+    image: docker-server
+    ports:
+      - 5000:5000
+    networks:
+      - default
+
+networks:
+  default:
